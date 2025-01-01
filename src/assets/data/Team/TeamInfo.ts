@@ -15,7 +15,7 @@ export const FacultytableData : Person[] = [
     {'name': '郭裕兰',
         'title': '教授',
         'img': `/${base}/avatars/GuoYulan.jpeg`,
-        'area': ' 三维视觉与机器人\n\n获中国计算机学会自然科学一等奖',
+        'area': '团队负责人',
         'url': 'https://www.yulanguo.cn/',
         'email': 'guoyulan@sysu.edu.cn',
     },
