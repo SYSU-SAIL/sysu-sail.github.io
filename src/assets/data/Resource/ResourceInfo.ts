@@ -119,6 +119,12 @@ export const SoftwawretableData: Resourceitem[] =  [
 
 //数据集资源列表，已经下载的或我们自行采集的数据集资源列表
 export const DatasettableData: Resourceitem[] =  [
+	{
+        name: 'Flickr1024',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_Aachen_day_night.png`,
+        url: 'https://yingqianwang.github.io/Flickr1024/',
+        intro: '首个双目图像超分辨数据集',
+    },
     {
         name: 'Aachen-Day-Night',
         person: '李坤洪',
