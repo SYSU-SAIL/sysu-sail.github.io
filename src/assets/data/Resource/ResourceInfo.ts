@@ -81,7 +81,7 @@ export const ServertableData: Resourceitem[] =  [
         img: '',
         url: '',
         num: '45台',
-        intro: '单卡或双卡4090/3090/3080工作站，用于代码调试于本地验证',
+        intro: '单卡或双卡4090/3090/3080工作站，用于代码调试与本地验证',
     },
 ]
 
