@@ -29,7 +29,7 @@ export const PapertableData: Paper[] =  [
         code: 'https://github.com/QingyongHu/RandLA-Net',
     },
     {
-        title: 'Deep Learning for 3D Point Clouds: A Survey.',
+        title: 'Deep Learning for 3D Point Clouds: A Survey',
         book: 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2020, 43(12): 4338-4364.',
         author: 'Yulan Guo, Hanyun Wang, Qingyong Hu, Hao Liu, Li Liu, Mohammed Bennamoun',
         url: 'https://ieeexplore.ieee.org/document/9127813',

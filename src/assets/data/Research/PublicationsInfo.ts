@@ -868,7 +868,7 @@ export const PublicationstableData = computed<YearwithPaper[]>(() => [
 //         },
 //         {
 //             "title": "KptLLM: Unveiling The Power of Large Language Model for Keypoint Comprehension",
-//             "book": "Advances in Neural Information Processing Systems (NIPS)",
+//             "book": "Advances in Neural Information Processing Systems (NeurIPS)",
 //             "author": "Jie Yang, Wang Zeng, Sheng Jin, Lumin Xu, Wentao Liu, Chen Qian, Ruimao Zhang",
 //             "url": "https://neurips.cc/virtual/2024/poster/94108",
 //             "code": "",
@@ -1082,7 +1082,7 @@ export const PublicationstableData = computed<YearwithPaper[]>(() => [
 //         },
 //         {
 //             "title": "Discovering Intrinsic Spatial-Temporal Logic Rules to Explain Human Actions",
-//             "book": "Advances in Neural Information Processing Systems (NIPS)",
+//             "book": "Advances in Neural Information Processing Systems (NeurIPS)",
 //             "author": "Chengzhi Cao, Chao Yang, Ruimao Zhang, Shuang Li",
 //             "url": "https://neurips.cc/virtual/2023/poster/71178",
 //             "code": "",
@@ -1090,7 +1090,7 @@ export const PublicationstableData = computed<YearwithPaper[]>(() => [
 //         },
 //         {
 //             "title": "Motion-X: A Large-scale 3D Expressive Whole-body Human Motion Dataset",
-//             "book": "Advances in Neural Information Processing Systems (NIPS)",
+//             "book": "Advances in Neural Information Processing Systems (NeurIPS)",
 //             "author": "Jing Lin, Ailing Zeng, Shunlin Lu, Yuanhao Cai, Ruimao Zhang, Haoqian Wang, Lei Zhang",
 //             "url": "https://neurips.cc/virtual/2023/poster/73564",
 //             "code": "https://github.com/IDEA-Research/Motion-X",
@@ -1264,7 +1264,7 @@ export const PublicationstableData = computed<YearwithPaper[]>(() => [
 //         },
 //         {
 //             "title": "AMOS: A Large-Scale Abdominal Multi-Organ Benchmark for Versatile Medical Image Segmentation",
-//             "book": "Advances in Neural Information Processing Systems (NIPS)",
+//             "book": "Advances in Neural Information Processing Systems (NeurIPS)",
 //             "author": "Yuanfeng Ji, Haotian Bai, Jie Yang, Chongjian Ge, Ye Zhu, Ruimao Zhang, Zhen Li, Lingyan Zhanng, Wanling Ma, Xiang Wan, Ping Luo",
 //             "url": "https://neurips.cc/virtual/2022/poster/55771",
 //             "code": "https://jiyuanfeng.github.io/AMOS/",
@@ -1272,7 +1272,7 @@ export const PublicationstableData = computed<YearwithPaper[]>(() => [
 //         },
 //         {
 //             "title": "Let Images Give You More: Point Cloud Cross-Modal Training for Shape Analysis",
-//             "book": "Advances in Neural Information Processing Systems (NIPS)",
+//             "book": "Advances in Neural Information Processing Systems (NeurIPS)",
 //             "author": "Xu Yan, Heshen Zhan, Chaoda Zheng, Jiantao Gao, Ruimao Zhang, Shuguang Cui, Zhen Li",
 //             "url": "https://neurips.cc/virtual/2022/poster/55376",
 //             "code": "https://github.com/ZhanHeshen/PointCMT",

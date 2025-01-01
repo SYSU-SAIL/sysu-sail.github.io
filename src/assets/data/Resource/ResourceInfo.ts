@@ -119,13 +119,7 @@ export const SoftwawretableData: Resourceitem[] =  [
 
 //数据集资源列表，已经下载的或我们自行采集的数据集资源列表
 export const DatasettableData: Resourceitem[] =  [
-	{
-        name: 'Flickr1024',
-        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_Aachen_day_night.png`,
-        url: 'https://yingqianwang.github.io/Flickr1024/',
-        intro: '首个双目图像超分辨数据集',
-    },
-    {
+	    {
         name: 'Aachen-Day-Night',
         person: '李坤洪',
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_Aachen_day_night.png`,
@@ -180,6 +174,14 @@ export const DatasettableData: Resourceitem[] =  [
         url: 'https://research.nvidia.com/publication/2018-06_falling-things-synthetic-dataset-3d-object-detection-and-pose-estimation',
         num: '87GB',
         intro: '渲染的室内外场景数据集，仅下载了对应的RGB与深度图',
+    },
+    {
+        name: 'Flickr1024',
+        person: '王龙光',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_flickr1024.jpg`,
+        url: 'https://yingqianwang.github.io/Flickr1024/',
+        num: '2.5GB(压缩包)',
+        intro: '首个双目图像超分辨数据集',
     },
     {
         name: 'HR_VS-stereo',

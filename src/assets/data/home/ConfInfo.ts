@@ -14,7 +14,7 @@ export const ConftableData: Conf[] =  [
     },
 	{
         name: 'IROS',
-        level: 'CCF A',
+        level: 'CCF C',
         date: '2025-03-01',
         url: 'http://www.iros25.org/',
     },
@@ -44,13 +44,13 @@ export const ConftableData: Conf[] =  [
     },
 	{
         name: 'ICRA',
-        level: 'CCF A',
+        level: 'CCF B',
         date: 'TBD',
         url: 'https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra',
     },
 	{
         name: 'ICLR',
-        level: 'CCF A',
+        level: 'TH-CPL A',
         date: '2024-10-01',
         url: 'https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra',
     },
