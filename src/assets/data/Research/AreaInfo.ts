@@ -14,8 +14,8 @@ const base = import.meta.env.VITE_BASE_PATH;
 export const AreatableData = computed<Area[]>(() => [
     {
         id: 'scene_receip_and_recon',
-        area: '三维场景感知与重建',
-        intro: '三维场景感知与重建致力于通过采集三维环境中的图像、点云、深度等数据，感知周围环境的三维物体，重建场景的三维结构，实验室在此方向主要聚焦深度估计、点云配准制图、点云语义理解等理论和方法，相关研究成果应用于某型自动抓取机器人等。',
+        area: '三维场景建图与定位',
+        intro: '致力于利用激光雷达、单目相机、双目相机、事件相机、光场相机等传感器，实现对三维环境的深度信息获取，并在此基础上完成对大规模场景的三维建图及对传感器自身的准确定位，相关成果应用于某型无人机与机器人。实验室在此方向主要聚焦立体匹配、深度估计、点云配准、视觉定位。',
         img: `/${import.meta.env.VITE_BASE_PATH}/research_area/scene_receip_and_recon.png`,
         papers: [
             {
@@ -32,81 +32,53 @@ export const AreatableData = computed<Area[]>(() => [
                 "url": "https://ieeexplore.ieee.org/document/9206116",
                 "code": "https://github.com/The-Learning-And-Vision-Atelier-LAVA/PAM",
             },
-            {
+			{
+                "title": "Soft Exemplar Highlighting for Cross-View Image-based Geo-localization",
+                "book": "IEEE Transactions on Image Processing (TIP)",
+                "author": "Yulan Guo, Michael Choi, Kunhong Li, Farid Boussaid, Mohammed Bennamoun",
+                "url": "https://ieeexplore.ieee.org/abstract/document/9720146/",
+                "code": "",
+            },
+            
+        ]
+    },
+    {
+        id: 'generation_and_edition',
+        area: '点云理解压缩与生成',
+        intro: '致力于对三维点云数据进行理解与分析，从而获取场景中的物体、事件、关系等语义信息，在此基础上，进一步实现对点云的压缩编码，提高数据传输效率，同时实现点云内容的生成，相关成果应用于某自动驾驶产品。实验室在此方向主要聚焦点云分割、场景图预测、点云压缩、三维内容生成。',
+        img: `/${base}/research_area/generation_and_edition.png`,
+        papers: [
+			{
                 "title": "Learning Semantic Segmentation of Large-Scale Point Clouds with Random Sampling",
                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
                 "author": "Qingyong Hu, Bo Yang, Linhai Xie, Stefano Rosa, Yulan Guo, Zhihua Wang, Niki Trigoni, Andrew Markham",
                 "url": "https://ieeexplore.ieee.org/document/9440696",
                 "code": "https://github.com/QingyongHu/RandLA-Net",
             },
+			{
+                "title": "Heterogeneous Graph Learning for Scene Graph Prediction in 3D Point Clouds",
+                "book": "European Conference on Computer Vision (ECCV)",
+                "author": "Yanni Ma, Hao Liu, Yun Pei, Yulan Guo",
+                "url": "https://fq.pkwyx.com/default/https/www.ecva.net/papers/eccv_2024/papers_ECCV/papers/03785.pdf",
+                "code": "",
+            },
+			{
+                "title": "3DAC: Learning Attribute Compression for Point Clouds",
+                "book": "IEEE/CVF International Conference on Computer Vision and Pattern Recognition (CVPR)",
+                "author": "Guangchi Fang, Qingyong Hu, Hanyun Wang, Yiling Xu, Yulan Guo",
+                "url": "https://openaccess.thecvf.com/content/CVPR2022/papers/Fang_3DAC_Learning_Attribute_Compression_for_Point_Clouds_CVPR_2022_paper.pdf",
+                "code": "",
+            },            
         ]
-    },
-    {
-        id: 'generation_and_edition',
-        area: '三维内容生成与编辑',
-        intro: '三维内容生成与编辑致力于利用文本、图像等多样化的控制条件生成三维内容并对其进行灵活可控的编辑，实验室在此方向主要聚焦三维重建、文生三维、三维编辑等理论和方法，相关成果应用于场景重建与制图、无人驾驶系统等。',
-        img: `/${base}/research_area/generation_and_edition.png`,
-        papers: [
-            {
-                "title": "Exploring Fine-Grained Sparsity in Neural Networks for Efficient Inference",
-                "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-                "author": "Longguang Wang, Yulan Guo, Xiaoyu Dong, Yingqian Wang, Xinyi Ying, Zaiping Lin, Wei An",
-                "url": "https://ieeexplore.ieee.org/abstract/document/9841044",
-                "code": "",
-            },
-            {
-                "title": "Learning Spherical Radiance Field for Efficient 360° Unbounded Novel View Synthesis",
-                "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Minglin Chen, Longguang Wang, Zilong Dong, Yinjie Lei, Yulan Guo",
-                "url": "https://ieeexplore.ieee.org/abstract/document/10552662",
-                "code": "https://minglin-chen.github.io/SphericalRF",
-            },
-            {
-                "title": "WSSIC-Net: Weakly-Supervised Semantic Instance Completion of 3D Point Cloud Scenes",
-                "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Zhiheng Fu, Yulan Guo, Minglin Chen, Qingyong Hu, Hamid Laga, Farid Boussaid, Mohammed Bennamoun",
-                "url": "",
-                "code": "",
-            },
-        ]
-    },
-    {
-        id: 'visial_sigmentation',
-        area: '视觉信息理解与分析',
-        intro: '视觉信息理解与分析致力于对图像、视频等视觉内容进行理解与分析，获取视觉内容中物体、场景、事件等语义信息，实验室在此方向主要聚焦图像/视频目标检测、图像/视频语义分割等理论和方法，相关研究成果应用于视觉导航定位、图像解译理解等。',
-        img: `/${base}/research_area/visial_sigmentation.png`,
-        papers: [
-            {
-                "title": "Beyond Appearance: Multi-Frame Spatio-Temporal Context Memory Networks for Efficient And Robust Video Object Segmentation",
-                "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Jisheng Dang, Huicheng Zheng, Xiaohao Xu, Xu Yan, Longguang Wang, Yulan Guo",
-                "url": "https://ieeexplore.ieee.org/abstract/document/10659365",
-                "code": "",
-            },
-            {
-                "title": "Efficient And Robust Video Object Segmentation through Isogenous Memory Sampling And Frame Relation Mining",
-                "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Jisheng Dang, Huicheng Zheng, Jinming Lai, Xu Yan, Yulan Guo",
-                "url": "https://ieeexplore.ieee.org/abstract/document/10179254",
-                "code": "",
-            },
-            {
-                "title": "Dense Nested Attention Network for Infrared Small Target Detection",
-                "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Boyang Li, Miao Li, Chao Xiao, Ting Liu, Longguang Wang, Yingqian Wang, Zaiping Lin, Wei An, Yulan Guo",
-                "url": "https://ieeexplore.ieee.org/abstract/document/9864119",
-                "code": "https://github.com/YeRen123455/Infrared-Small-Target-Detection",
-            },
-        ]
-    },
+    },  
     {
         id: 'visual_enhancement',
         area: '视觉内容复原与增强',
-        intro: '视觉内容复原与增强致力于提高图像、视频等视觉内容的清晰度，使其具有更好的感官视觉体验马桶是更易于理解分析，实验室在此方向主要聚焦图像超分辨、三维内容增强等理论和方法，相关研究成果应用于某型图像增强子系统等。',
+        intro: '致力于提高图像、视频、点云等视觉内容的清晰度，使其具有更好的感官视觉体验，或更易于机器理解分析，相关研究成果应用于某型图像增强子系统等。实验室在此方向主要聚焦图像超分辨、点云补全与上采样、三维内容增强。',
         img: `/${base}/research_area/visual_enhancement.png`,
         papers: [
             {
-                "title": "Unsupervised Degradation Representation Learning for Unpaired Restoration of Images And Point Clouds",
+                "title": "Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds",
                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
                 "author": "Longguang Wang, Yulan Guo, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An",
                 "url": "https://ieeexplore.ieee.org/abstract/document/10738507",
@@ -119,133 +91,43 @@ export const AreatableData = computed<Area[]>(() => [
                 "url": "https://ieeexplore.ieee.org/abstract/document/9716806",
                 "code": "https://yingqianwang.github.io/DistgLF/",
             },
-            {
-                "title": "Light Field Image Super-Resolution Using Deformable Convolution",
+			{
+                "title": "WSSIC-Net: Weakly-Supervised Semantic Instance Completion of 3D Point Cloud Scenes",
                 "book": "IEEE Transactions on Image Processing (TIP)",
-                "author": "Yingqian Wang, Jungang Yang, Longguang Wang, Xinyi Ying, Tianhao Wu, Wei An, Yulan Guo",
-                "url": "https://ieeexplore.ieee.org/abstract/document/9286855",
-                "code": "https://github.com/YingqianWang/LF-DFnet",
+                "author": "Zhiheng Fu, Yulan Guo, Minglin Chen, Qingyong Hu, Hamid Laga, Farid Boussaid, Mohammed Bennamoun",
+                "url": "",
+                "code": "",
+            },
+        ]
+    },
+	{
+        id: 'visial_sigmentation',
+        area: '多模态融合与机器人',
+        intro: '致力于面向国家/地方重大需求，整合实验室在机器人多模态感知、理解、交互等方面的核心技术积累，探索具身机器人仿真、数据集构建、模型训练、Sim2Real迁移等技术，开展机器人遥操作、模仿学习、模型轻量化部署等研究，实现地面履带式/轮式/四足/双足机器人、空中无人机、水下无人系统的部署与应用。',
+        img: `/${base}/research_area/visial_sigmentation.png`,
+        papers: [       
+            {
+                "title": "Parallel Dual-Hand Detection by Using Hand and Body Features for Robot Teleoperation",
+                "book": "IEEE Transactions on Human-Machine Systems (THMS),",
+                "author": "Qing Gao, Zhaojie Ju, Yongquan Chen, Qiwen Wang, Yinan Zhao, Shiwu Lai",
+                "url": "https://ieeexplore.ieee.org/abstract/document/10059173/",
+                "code": "",
+            },
+			{
+                "title": "Exploring Fine-Grained Sparsity in Neural Networks for Efficient Inference",
+                "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
+                "author": "Longguang Wang, Yulan Guo, Xiaoyu Dong, Yingqian Wang, Xinyi Ying, Zaiping Lin, Wei An",
+                "url": "https://ieeexplore.ieee.org/abstract/document/9841044",
+                "code": "https://github.com/SYSU-SAIL/SMSR",
+            },
+            {
+                "title": "IF-ConvTransformer: A Framework for Human Activity Recognition using IMU Fusion and ConvTransformer",
+                "book": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+                "author": "Ye Zhang, Yi Hou, Kewei Ouyang, Shilin Zhou, Yulan Guo",
+                "url": "https://dl.acm.org/doi/pdf/10.1145/3534584",
+                "code": "",
             },
         ]
     },
 ]);
 
-
-// export const AreatableData: Area[] =  [
-//     {
-//         id: 'scene_receip_and_recon',
-//         area: '三维场景感知与重建',
-//         intro: '三维场景感知与重建致力于通过采集三维环境中的图像、点云、深度等数据，感知周围环境的三维物体，重建场景的三维结构，实验室在此方向主要聚焦深度估计、点云配准制图、点云语义理解等理论和方法，相关研究成果应用于某型自动抓取机器人等。',
-//         img: '/${base}/research_area/scene_receip_and_recon.png',
-//         papers: [
-//             {
-//                 "title": "You Only Train Once: Learning General and Distinctive 3D Local Descriptors",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Sheng Ao, Yulan Guo, Yingying Hu, Bo Yang, Andrew Markham, Zengping Chen",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/9792207",
-//                 "code": "",
-//             },
-//             {
-//                 "title": "Parallax Attention for Unsupervised Stereo Correspondence Learning",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Longguang Wang, Yulan Guo, Yingqian Wang, Zhengfa Liang, Zaiping Lin, Jungang Yang, Wei An",
-//                 "url": "https://ieeexplore.ieee.org/document/9206116",
-//                 "code": "https://github.com/The-Learning-And-Vision-Atelier-LAVA/PAM",
-//             },
-//             {
-//                 "title": "Learning Semantic Segmentation of Large-Scale Point Clouds with Random Sampling",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Qingyong Hu, Bo Yang, Linhai Xie, Stefano Rosa, Yulan Guo, Zhihua Wang, Niki Trigoni, Andrew Markham",
-//                 "url": "https://ieeexplore.ieee.org/document/9440696",
-//                 "code": "https://github.com/QingyongHu/RandLA-Net",
-//             },
-//         ]
-//     },
-//     {
-//         id: 'generation_and_edition',
-//         area: '三维内容生成与编辑',
-//         intro: '三维内容生成与编辑致力于利用文本、图像等多样化的控制条件生成三维内容并对其进行灵活可控的编辑，实验室在此方向主要聚焦三维重建、文生三维、三维编辑等理论和方法，相关成果应用于场景重建与制图、无人驾驶系统等。',
-//         img: '/${import.meta.env.VITE_BASE_PATH}/research_area/generation_and_edition.png',
-//         papers: [
-//             {
-//                 "title": "Exploring Fine-Grained Sparsity in Neural Networks for Efficient Inference",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Longguang Wang, Yulan Guo, Xiaoyu Dong, Yingqian Wang, Xinyi Ying, Zaiping Lin, Wei An",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/9841044",
-//                 "code": "",
-//             },
-//             {
-//                 "title": "Learning Spherical Radiance Field for Efficient 360° Unbounded Novel View Synthesis",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Minglin Chen, Longguang Wang, Zilong Dong, Yinjie Lei, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/10552662",
-//                 "code": "https://minglin-chen.github.io/SphericalRF",
-//             },
-//             {
-//                 "title": "WSSIC-Net: Weakly-Supervised Semantic Instance Completion of 3D Point Cloud Scenes",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Zhiheng Fu, Yulan Guo, Minglin Chen, Qingyong Hu, Hamid Laga, Farid Boussaid, Mohammed Bennamoun",
-//                 "url": "",
-//                 "code": "",
-//             },
-//         ]
-//     },
-//     {
-//         id: 'visial_sigmentation',
-//         area: '视觉信息理解与分析',
-//         intro: '视觉信息理解与分析致力于对图像、视频等视觉内容进行理解与分析，获取视觉内容中物体、场景、事件等语义信息，实验室在此方向主要聚焦图像/视频目标检测、图像/视频语义分割等理论和方法，相关研究成果应用于视觉导航定位、图像解译理解等。',
-//         img: '/${import.meta.env.VITE_BASE_PATH}/research_area/visial_sigmentation.png',
-//         papers: [
-//             {
-//                 "title": "Beyond Appearance: Multi-Frame Spatio-Temporal Context Memory Networks for Efficient And Robust Video Object Segmentation",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Jisheng Dang, Huicheng Zheng, Xiaohao Xu, Xu Yan, Longguang Wang, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/10659365",
-//                 "code": "",
-//             },
-//             {
-//                 "title": "Efficient And Robust Video Object Segmentation through Isogenous Memory Sampling And Frame Relation Mining",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Jisheng Dang, Huicheng Zheng, Jinming Lai, Xu Yan, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/10179254",
-//                 "code": "",
-//             },
-//             {
-//                 "title": "Dense Nested Attention Network for Infrared Small Target Detection",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Boyang Li, Miao Li, Chao Xiao, Ting Liu, Longguang Wang, Yingqian Wang, Zaiping Lin, Wei An, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/9864119",
-//                 "code": "https://github.com/YeRen123455/Infrared-Small-Target-Detection",
-//             },
-//         ]
-//     },
-//     {
-//         id: 'visual_enhancement',
-//         area: '视觉内容复原与增强',
-//         intro: '视觉内容复原与增强致力于提高图像、视频等视觉内容的清晰度，使其具有更好的感官视觉体验马桶是更易于理解分析，实验室在此方向主要聚焦图像超分辨、三维内容增强等理论和方法，相关研究成果应用于某型图像增强子系统等。',
-//         img: '/${import.meta.env.VITE_BASE_PATH}/research_area/visual_enhancement.png',
-//         papers: [
-//             {
-//                 "title": "Unsupervised Degradation Representation Learning for Unpaired Restoration of Images And Point Clouds",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Longguang Wang, Yulan Guo, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/10738507",
-//                 "code": "",
-//             },
-//             {
-//                 "title": "Disentangling Light Fields for Super-Resolution and Disparity Estimation",
-//                 "book": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)",
-//                 "author": "Yingqian Wang, Longguang Wang, Gaochang Wu, Jungang Yang, Wei An, Jingyi Yu, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/9716806",
-//                 "code": "https://yingqianwang.github.io/DistgLF/",
-//             },
-//             {
-//                 "title": "Light Field Image Super-Resolution Using Deformable Convolution",
-//                 "book": "IEEE Transactions on Image Processing (TIP)",
-//                 "author": "Yingqian Wang, Jungang Yang, Longguang Wang, Xinyi Ying, Tianhao Wu, Wei An, Yulan Guo",
-//                 "url": "https://ieeexplore.ieee.org/abstract/document/9286855",
-//                 "code": "https://github.com/YingqianWang/LF-DFnet",
-//             },
-//         ]
-//     },
-// ]
