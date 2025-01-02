@@ -122,7 +122,7 @@ const imgSrc = computed(() =>
   margin-top: 5px;
   line-height: 125%;
   font-size: 0.8rem;
-  text-indent: 1.6rem;
+  text-indent: 0rem;
   margin-bottom: 0px;
 }
 

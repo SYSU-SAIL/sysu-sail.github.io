@@ -13,10 +13,10 @@ const base = import.meta.env.VITE_BASE_PATH;
 
 export const AreatableData = computed<Area[]>(() => [
     {
-        id: 'scene_receip_and_recon',
+        id: 'scene_recon',
         area: '三维场景建图与定位',
         intro: '致力于利用激光雷达、单目相机、双目相机、事件相机、光场相机等传感器，实现对三维环境的深度信息获取，并在此基础上完成对大规模场景的三维建图及对传感器自身的准确定位，相关成果应用于某型无人机与机器人。实验室在此方向主要聚焦立体匹配、深度估计、点云配准、视觉定位。',
-        img: `/${import.meta.env.VITE_BASE_PATH}/research_area/scene_receip_and_recon.png`,
+        img: `/${import.meta.env.VITE_BASE_PATH}/research_area/scene_recon.png`,
         papers: [
             {
                 "title": "Parallax Attention for Unsupervised Stereo Correspondence Learning",
@@ -101,10 +101,10 @@ export const AreatableData = computed<Area[]>(() => [
         ]
     },
     {
-        id: 'visual_enhancement',
+        id: 'embody',
         area: '具身系统规划与操控',
         intro: '致力于整合多模态大型模型、强化学习与神经-符号计算等前沿技术，驱动具身智能体进行任务的有效分析和规划，并通过精确操控，实现智能体与环境及物体间的高效交互，最终达成既定任务目标。实验室在此方向主要聚焦于具身多模态基础模型的开发，世界模型的构建、以及基于视觉的策略学习。',
-        img: `/${base}/research_area/visual_enhancement.png`,
+        img: `/${base}/research_area/scene_receip_and_recon.png`,
         papers: [
             {
                 "title": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception",
@@ -130,10 +130,10 @@ export const AreatableData = computed<Area[]>(() => [
         ]
     },
     {
-        id: 'visual_enhancement',
+        id: 'human_body',
         area: '人体内容感知与重建',
         intro: '致力于使机器能够在动态场景中主动感知、分析和解释人类的状态、行为及潜在动机，并可以通过语音、文字等控制生成具有高度类人属性的虚拟形象与具身实体。实验室在此方向主要聚焦于人体关键点检测、人体行为分析、人体动作重建与生成、以及面向人形机器人的行为学习。',
-        img: `/${base}/research_area/visual_enhancement.png`,
+        img: `/${base}/research_area/human_body.png`,
         papers: [
             {
                 "title": "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension",
@@ -159,10 +159,10 @@ export const AreatableData = computed<Area[]>(() => [
         ]
     },
     {
-        id: 'visial_sigmentation',
+        id: 'robot',
         area: '多模态融合与机器人',
         intro: '致力于面向国家/地方重大需求，整合实验室在机器人多模态感知、理解、交互、规划等方面的核心技术积累，探索具身机器人仿真、数据集构建、模型训练、Sim2Real迁移等技术，开展机器人遥操作、模仿学习、模型轻量化部署等研究，实现地面履带式/轮式/四足/双足机器人、空中无人机、水下无人系统的部署与应用。',
-        img: `/${base}/research_area/visial_sigmentation.png`,
+        img: `/${base}/research_area/robot.jpg`,
         papers: [       
             {
                 "title": "Parallel Dual-Hand Detection by Using Hand and Body Features for Robot Teleoperation",

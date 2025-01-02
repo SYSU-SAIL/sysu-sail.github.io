@@ -115,10 +115,42 @@ export const SoftwawretableData: Resourceitem[] =  [
         num: '1套',
         intro: '三维重建软件，支持导入图像序列进行稠密三维重建，可以加入GPS信息，新版本软件名为iTwin Capture',
     },
+    {
+        name: '多传感器信号仿真系统',
+        person: '高平海',
+        img: '',
+        url: '',
+        num: '1套',
+        intro: '激光雷达、可见光相机、红外相机、毫米波雷达等多种传感器联合仿真',
+    },
 ]
 
 //数据集资源列表，已经下载的或我们自行采集的数据集资源列表
 export const DatasettableData: Resourceitem[] =  [
+    {
+        name: 'Flickr1024',
+        person: '王龙光',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_flickr1024.jpg`,
+        url: 'https://yingqianwang.github.io/Flickr1024/',
+        num: '2.5GB(压缩包)',
+        intro: '首个双目图像超分辨数据集',
+    },
+    {
+        name: 'Lunar-CV',
+        person: '管玮珺',
+        img: '',
+        url: 'https://link.springer.com/article/10.1007/s44267-024-00045-y',
+        num: '3GB',
+        intro: '首个月球环境跨视角定位数据集。',
+    },
+    {
+        name: 'SensatUrban',
+        person: '刘砚',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_sensaturban.png`,
+        url: 'https://github.com/QingyongHu/SensatUrban?tab=readme-ov-file',
+        num: '30GB(压缩包)',
+        intro: '通过无人机在英国的伯明翰，剑桥采集的城市规模点云数据集。',
+    },
 	    {
         name: 'Aachen-Day-Night',
         person: '李坤洪',
@@ -174,14 +206,6 @@ export const DatasettableData: Resourceitem[] =  [
         url: 'https://research.nvidia.com/publication/2018-06_falling-things-synthetic-dataset-3d-object-detection-and-pose-estimation',
         num: '87GB',
         intro: '渲染的室内外场景数据集，仅下载了对应的RGB与深度图',
-    },
-    {
-        name: 'Flickr1024',
-        person: '王龙光',
-        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_flickr1024.jpg`,
-        url: 'https://yingqianwang.github.io/Flickr1024/',
-        num: '2.5GB(压缩包)',
-        intro: '首个双目图像超分辨数据集',
     },
     {
         name: 'HR_VS-stereo',
