@@ -57,7 +57,7 @@ export const FacultytableData : Person[] = [
     {'name': '王龙光',
         'title': '博士后',
         'img': `/${base}/avatars/WangLongguang.png`,
-        'area': '底层视觉与加速\n\n入选中国科协青年人才托举工程',
+        'area': '底层视觉与模型轻量化\n\n入选中国科协青年人才托举工程',
         'url': 'https://longguangwang.github.io/',
         'email': 'wanglg9@mail.sysu.edu.cn',
     },
