@@ -70,7 +70,8 @@ const handleClick = (url: any) => {
                 实验室长期招聘博士后，可申报中山大学逸仙博士后项目，同时可享受广东及深圳相关博后补贴，待遇优厚。欢迎在人工智能、计算机、电子信息等相学科取得博士学位，致力于从事三维视觉、具身智能等相关研究，有良好的理论和实践基础，有刻苦钻研的精神和强烈的事业心，有良好的身体心理素质和团队合作精神的博士与我们联系。
               </p>
               <p>
-                <div>相关招聘信息：<el-link class="link_text" @click="handleClick('https://rcb.sysu.edu.cn/article/547')">https://rcb.sysu.edu.cn/article/547</el-link></div>
+                相关招聘信息：<el-link class="link_text" @click="handleClick('https://rcb.sysu.edu.cn/article/547')">https://rcb.sysu.edu.cn/article/547</el-link>
+		    
                 <div>相关政策信息：<el-link class="link_text" @click="handleClick('https://rsc.sysu.edu.cn/postdoctor/article/128')">https://rsc.sysu.edu.cn/postdoctor/article/128</el-link></div>
               </p>
             </div>
