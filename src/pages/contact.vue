@@ -97,11 +97,11 @@ const handleClick = (url: any) => {
             </div>
             <div class="card-body">
               <p>
-                <div>相关政策请关注中山大学研究生招生网：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/')">https://graduate.sysu.edu.cn/zsw/</el-link></div>
+                相关政策请关注中山大学研究生招生网：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/')">https://graduate.sysu.edu.cn/zsw/</el-link>
 		    
-                <div>中山大学博士研究生招生公告：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/doctor')">https://graduate.sysu.edu.cn/zsw/doctor</el-link></div>
+                中山大学博士研究生招生公告：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/doctor')">https://graduate.sysu.edu.cn/zsw/doctor</el-link>
 		    
-                <div>中山大学硕士研究生招生公告：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/postgraduate')">https://graduate.sysu.edu.cn/zsw/postgraduate</el-link></div>
+                中山大学硕士研究生招生公告：<el-link class="link_text" @click="handleClick('https://graduate.sysu.edu.cn/zsw/postgraduate')">https://graduate.sysu.edu.cn/zsw/postgraduate</el-link>
 		    
               </p>
             </div>
