@@ -2,16 +2,16 @@
   <el-config-provider namespace="ep">
     <el-container style="height: 100%">
       <el-header class="header">
-        <BaseHeader />
+        <BaseHeader/>
       </el-header>
 
       <el-container style="height: 100%">
         <div class="main-container">
           <div style="padding-top: 20px; padding-bottom: 20px; width: 100%;">
-            <RouterView />
+            <RouterView/>
           </div>
         </div>
-        <el-backtop :right="100" :bottom="100" />
+        <el-backtop :right="100" :bottom="100"/>
       </el-container>
 
       <el-footer class="footer">
@@ -34,24 +34,23 @@
             <el-row>
               <el-col :span="12">
                 <h2>
-                  <el-link class="el-link" @click="handleClick('https://www.sysu.edu.cn/')" >
+                  <el-link class="el-link" @click="handleClick('https://www.sysu.edu.cn/')">
                     中山大学
                   </el-link>
                 </h2>
 
                 <p>
-                  <el-link class="el-link" @click="handleClick('https://sece.sysu.edu.cn/index.htm')" >
+                  <el-link class="el-link" @click="handleClick('https://sece.sysu.edu.cn/index.htm')">
                     中山大学电子与通信工程学院
                   </el-link>
                 </p>
-              </el-col>
 
-              <el-col :span="12">
-                <h2>
-                  <el-link class="el-link" @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">
+                <p>
+                  <el-link class="el-link"
+                           @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">
                     中山大学研究生教育管理服务平台
                   </el-link>
-                </h2>
+                </p>
 
                 <p>
                   <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">
@@ -59,20 +58,24 @@
                   </el-link>
                 </p>
               </el-col>
+
+              <el-col :span="6" :offset="3">
+                <component is="script" type="text/javascript" id="clstr_globe" src="http://clustrmaps.com/globe.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g"></component>
+              </el-col>
             </el-row>
           </el-col>
 
-<!--          <el-col :span="8">-->
-<!--            <h1> </h1>-->
+          <!--          <el-col :span="8">-->
+          <!--            <h1> </h1>-->
 
-<!--            <h2>-->
-<!--              <el-link class="el-link" href="https://www.sysu.edu.cn/" >中山大学</el-link>-->
-<!--            </h2>-->
+          <!--            <h2>-->
+          <!--              <el-link class="el-link" href="https://www.sysu.edu.cn/" >中山大学</el-link>-->
+          <!--            </h2>-->
 
-<!--            <p>-->
-<!--              <el-link class="el-link" href="https://sece.sysu.edu.cn/index.htm" >中山大学电子与通信工程学院</el-link>-->
-<!--            </p>-->
-<!--          </el-col>-->
+          <!--            <p>-->
+          <!--              <el-link class="el-link" href="https://sece.sysu.edu.cn/index.htm" >中山大学电子与通信工程学院</el-link>-->
+          <!--            </p>-->
+          <!--          </el-col>-->
         </el-row>
       </el-footer>
 
@@ -100,7 +103,7 @@
   text-align: left;
 }
 
-.footer h1{
+.footer h1 {
   margin-top: 10px;
   margin-bottom: 30px;
   color: #ffffff;
@@ -109,7 +112,7 @@
 
 }
 
-.el-link{
+.el-link {
   margin-top: 5px;
   margin-bottom: 5px;
   color: #ffffff;
@@ -119,7 +122,7 @@
   font-weight: normal;
 }
 
-.footer h2{
+.footer h2 {
   margin-top: 5px;
   margin-bottom: 5px;
   color: #ffffff;

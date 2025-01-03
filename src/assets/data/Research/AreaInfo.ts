@@ -104,7 +104,7 @@ export const AreatableData = computed<Area[]>(() => [
         id: 'embody',
         area: '具身系统规划与操控',
         intro: '致力于整合多模态大型模型、强化学习与神经-符号计算等前沿技术，驱动具身智能体进行任务的有效分析和规划，并通过精确操控，实现智能体与环境及物体间的高效交互，最终达成既定任务目标。实验室在此方向主要聚焦于具身多模态基础模型的开发，世界模型的构建、以及基于视觉的策略学习。',
-        img: `/${base}/research_area/scene_receip_and_recon.png`,
+        img: `/${base}/research_area/embody.jpg`,
         papers: [
             {
                 "title": "MP5: A Multi-modal Open-ended Embodied System in Minecraft via Active Perception",
@@ -133,7 +133,7 @@ export const AreatableData = computed<Area[]>(() => [
         id: 'human_body',
         area: '人体内容感知与重建',
         intro: '致力于使机器能够在动态场景中主动感知、分析和解释人类的状态、行为及潜在动机，并可以通过语音、文字等控制生成具有高度类人属性的虚拟形象与具身实体。实验室在此方向主要聚焦于人体关键点检测、人体行为分析、人体动作重建与生成、以及面向人形机器人的行为学习。',
-        img: `/${base}/research_area/human_body.png`,
+        img: `/${base}/research_area/human_body.jpg`,
         papers: [
             {
                 "title": "KptLLM: Unveiling the Power of Large Language Model for Keypoint Comprehension",

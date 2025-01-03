@@ -13,9 +13,9 @@ const base = import.meta.env.VITE_BASE_PATH;
 
 export const FacultytableData : Person[] = [
     {'name': '郭裕兰',
-        'title': '教授',
+        'title': '教授 团队负责人',
         'img': `/${base}/avatars/GuoYulan.jpeg`,
-        'area': '团队负责人',
+        'area': '三维视觉与机器人',
         'url': 'https://www.yulanguo.cn/',
         'email': 'guoyulan@sysu.edu.cn',
     },

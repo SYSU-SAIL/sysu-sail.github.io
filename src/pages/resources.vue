@@ -2,7 +2,7 @@
 
 import {ServertableData, HardwawretableData, SoftwawretableData, DatasettableData} from "~/assets/data/Resource/ResourceInfo";
 import ResourceCategory from "~/components/ResourceCategory.vue";
-import {computed, defineProps, ref, watch} from 'vue';
+import {computed, defineProps, ref, watch, onMounted, onUnmounted} from 'vue';
 
 // 构建基础路径
 const basePath = ref(import.meta.env.VITE_BASE_PATH);
@@ -12,15 +12,15 @@ const img_v100 = `/${basePath.value}/resources/hw_v100_resize.jpg`
 const img_4090 = `/${basePath.value}/resources/hw_4090_resize.png`
 const img_3090 = `/${basePath.value}/resources/hw_3090_resize.png`
 
-const img_dji = `/${basePath.value}/resources/hw_DJI_M300_RTK.jpg`
-const img_faro = `/${basePath.value}/resources/hw_faro.jpg`
-const img_gl8 = `/${basePath.value}/resources/hw_lidarcar.jpg`
-const img_riegl = `/${basePath.value}/resources/hw_RIEGL.png`
+const img_dji = `/${basePath.value}/resources/hw_DJI_M300_RTK_resize.jpg`
+const img_faro = `/${basePath.value}/resources/hw_faro_resize.jpg`
+const img_gl8 = `/${basePath.value}/resources/hw_lidarcar_resize.jpg`
+const img_riegl = `/${basePath.value}/resources/hw_RIEGL_resize.jpg`
 
-const img_robot1 = `/${basePath.value}/resources/hw_robot.jpg`
-const img_robot2 = `/${basePath.value}/resources/hw_robot2.jpg`
-const img_robot3 = `/${basePath.value}/resources/hw_robot3.jpg`
-const img_robot4 = `/${basePath.value}/resources/hw_robot4.jpg`
+const img_robot1 = `/${basePath.value}/resources/hw_robot_resize.jpg`
+const img_robot2 = `/${basePath.value}/resources/hw_robot2_resize.jpg`
+const img_robot3 = `/${basePath.value}/resources/hw_robot3_resize.jpg`
+const img_robot4 = `/${basePath.value}/resources/hw_robot4_resize.jpg`
 
 const catRowDiv = ref<HTMLDivElement | null>(null);
 const CardHeight = ref<number>(100);
@@ -43,13 +43,31 @@ watch(computedHeight, (newHeight) => {
   CardHeight.value = newHeight;
 }, { immediate: true }); // immediate 选项确保在挂载时立即执行
 
-// 创建一个新的计算属性，确保CardHeight2始终是CardHeight的1.5倍
-const computedDoubleHeight = computed(() => 1.5 * CardHeight.value);
+// 创建一个新的计算属性，确保CardHeight2始终是CardHeight的倍数
+const computedDoubleHeight = computed(() => 1.3 * CardHeight.value);
 
 // 将CardHeight2的值绑定到computedDoubleHeight
 watch(computedDoubleHeight, (newDoubleHeight) => {
   CardHeight2.value = newDoubleHeight;
 });
+
+// const handleResize = () => {
+//   // 处理窗口变化的逻辑
+//   // 获取所有具有 class="shadow2" 的元素
+//   const imgDivs = document.querySelectorAll('.the-col-img') as NodeListOf<HTMLDivElement>;
+//   // 遍历这些元素并设置其高度
+//   imgDivs.forEach((imgDiv) => {
+//     imgDiv.style.height = `${CardHeight.value}px`;
+//   });
+// };
+//
+// onMounted(() => {
+//   window.addEventListener('resize', handleResize);
+// });
+// onUnmounted(() => {
+//   window.removeEventListener('resize', handleResize);
+// });
+
 
 const severCategory = { title: '计算资源', data: ServertableData };
 const hardwareCategory = { title: '硬件资源', data: HardwawretableData };
@@ -76,15 +94,11 @@ const datasetCategory = { title: '数据资源', data: DatasettableData };
             <span class="title_text">计算资源</span>
           </div>
           <div class="card-body">实验室拥有80G显存计算显卡、英伟达V100、TITAN RTX、4090、3090、2080Ti等系列计算显卡及服务器，可为AI模型训练提供有效算力支撑。</div>
-          <el-row >
-<!--            <el-col :span="6"  style="margin-bottom: 20px"><el-card class="shadow"><img :src="img_a100" width="100%" :height="CardHeight" style=" object-fit: fill; " /></el-card></el-col>-->
-<!--            <el-col :span="6"  style="margin-bottom: 20px"><el-card class="shadow"><img :src="img_v100" width="100%" :height="CardHeight" style=" object-fit: fill; " /></el-card></el-col>-->
-<!--            <el-col :span="6"  style="margin-bottom: 20px"><el-card class="shadow"><img :src="img_4090" width="100%" :height="CardHeight" style=" object-fit: fill; " /></el-card></el-col>-->
-<!--            <el-col :span="6"  style="margin-bottom: 20px"><el-card class="shadow"><img :src="img_3090" width="100%" :height="CardHeight" style=" object-fit: fill; " /></el-card></el-col>-->
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_a100" width="100%" :height="CardHeight" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_v100" width="100%" :height="CardHeight" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_4090" width="100%" :height="CardHeight" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_3090" width="100%" :height="CardHeight" style=" object-fit: fill; " /></div></el-col>
+          <el-row type="flex" align-item="middle">
+            <el-col :span="6"  class="col-img"><div class="shadow2" ><img :src="img_a100" width="100%"  style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2" ><img :src="img_v100" width="100%"  style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2" ><img :src="img_4090" width="100%"  style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2" ><img :src="img_3090" width="100%"  style=" object-fit: fill; " /></div></el-col>
           </el-row>
         </div>
         <div id="hardware">
@@ -93,18 +107,18 @@ const datasetCategory = { title: '数据资源', data: DatasettableData };
             <span class="title_text">硬件资源</span>
           </div>
           <div class="card-body">实验室拥有RIEGL、FARO、速腾聚创、Ouster、大疆等厂家的全谱系车载与机载激光扫描设备，购置了配备高精度激光扫描系统、GPS/惯导系统、全景/单反/红外相机的车载多模态移动扫描平台，可为多模态数据获取提供有力支撑。</div>
-          <el-row >
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_dji" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_gl8" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_faro" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_riegl" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
+          <el-row type="flex" align="middle">
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_dji" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_gl8" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_faro" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_riegl" width="100%" style=" object-fit: fill; " /></div></el-col>
           </el-row>
           <div class="card-body">实验室拥有履带式机器人、轮式机器人、四足机器人、无人机、机械臂、灵巧手、夹爪等执行设备，可为机器人开发、测试与调试提供平台支撑。</div>
-          <el-row >
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_robot1" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_robot2" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_robot3" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
-            <el-col :span="6"  style="margin-bottom: 20px"><div class="shadow"><img :src="img_robot4" width="100%" :height="CardHeight2" style=" object-fit: fill; " /></div></el-col>
+          <el-row type="flex" align="middle">
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_robot1" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_robot2" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_robot3" width="100%" style=" object-fit: fill; " /></div></el-col>
+            <el-col :span="6"  class="col-img"><div class="shadow2"><img :src="img_robot4" width="100%" style=" object-fit: fill; " /></div></el-col>
           </el-row>
 
 
@@ -147,6 +161,11 @@ const datasetCategory = { title: '数据资源', data: DatasettableData };
   box-shadow: 0.5rem 0.5rem 1rem rgba(189, 35, 46, 0.3);
 }
 
+.shadow2 {
+  width: 80%;
+  box-shadow: 0.5rem 0.5rem 1rem rgba(189, 35, 46, 0.3);
+}
+
 .card-header {
   display: flex;
   //justify-content: space-between;
@@ -167,5 +186,13 @@ const datasetCategory = { title: '数据资源', data: DatasettableData };
   text-align: left;
   font-size: 20px;
   line-height: 150%;
+}
+
+.col-img{
+  margin-bottom: 20px;
+  justify-items: center;
+}
+
+.the-col-img{
 }
 </style>
