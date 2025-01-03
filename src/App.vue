@@ -28,44 +28,64 @@
             <h1>联系我们</h1>
             <h2>郭裕兰教授<br/><br/>guoyulan@sysu.edu.cn</h2>
           </el-col>
-          <el-col :span="16">
+
+          <el-col :span="8">
             <h1>相关链接</h1>
+            <h2>
+              <el-link class="el-link" @click="handleClick('https://www.sysu.edu.cn/')">
+                中山大学
+              </el-link>
+            </h2>
 
-            <el-row>
-              <el-col :span="12">
-                <h2>
-                  <el-link class="el-link" @click="handleClick('https://www.sysu.edu.cn/')">
-                    中山大学
-                  </el-link>
-                </h2>
+            <p>
+              <el-link class="el-link" @click="handleClick('https://sece.sysu.edu.cn/index.htm')">
+                中山大学电子与通信工程学院
+              </el-link>
+            </p>
 
-                <p>
-                  <el-link class="el-link" @click="handleClick('https://sece.sysu.edu.cn/index.htm')">
-                    中山大学电子与通信工程学院
-                  </el-link>
-                </p>
+            <p>
+              <el-link class="el-link"
+                       @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">
+                中山大学研究生教育管理服务平台
+              </el-link>
+            </p>
 
-                <p>
-                  <el-link class="el-link"
-                           @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">
-                    中山大学研究生教育管理服务平台
-                  </el-link>
-                </p>
+            <p>
+              <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">
+                中山大学本科教务系统
+              </el-link>
+            </p>
+          </el-col>
 
-                <p>
-                  <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">
-                    中山大学本科教务系统
-                  </el-link>
-                </p>
-              </el-col>
+          <el-col :span="4" :offset="2">
+            <component is="script" type="text/javascript" id="clstr_globe"
+                       src="https://clustrmaps.com/globe.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g"></component>
+          </el-col>
 
+
+<!--          <el-col :span="16">-->
+<!--            <h1>相关链接</h1>-->
+
+<!--            <el-row>-->
 <!--              <el-col :span="12">-->
 <!--                <h2>-->
+<!--                  <el-link class="el-link" @click="handleClick('https://www.sysu.edu.cn/')">-->
+<!--                    中山大学-->
+<!--                  </el-link>-->
+<!--                </h2>-->
+
+<!--                <p>-->
+<!--                  <el-link class="el-link" @click="handleClick('https://sece.sysu.edu.cn/index.htm')">-->
+<!--                    中山大学电子与通信工程学院-->
+<!--                  </el-link>-->
+<!--                </p>-->
+
+<!--                <p>-->
 <!--                  <el-link class="el-link"-->
 <!--                           @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">-->
 <!--                    中山大学研究生教育管理服务平台-->
 <!--                  </el-link>-->
-<!--                </h2>-->
+<!--                </p>-->
 
 <!--                <p>-->
 <!--                  <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">-->
@@ -74,12 +94,27 @@
 <!--                </p>-->
 <!--              </el-col>-->
 
-              <el-col :span="6" :offset="3">
-                <component is="script" type="text/javascript" id="clstr_globe"
-                           src="https://clustrmaps.com/globe.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g"></component>
-              </el-col>
-            </el-row>
-          </el-col>
+<!--&lt;!&ndash;              <el-col :span="12">&ndash;&gt;-->
+<!--&lt;!&ndash;                <h2>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-link class="el-link"&ndash;&gt;-->
+<!--&lt;!&ndash;                           @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">&ndash;&gt;-->
+<!--&lt;!&ndash;                    中山大学研究生教育管理服务平台&ndash;&gt;-->
+<!--&lt;!&ndash;                  </el-link>&ndash;&gt;-->
+<!--&lt;!&ndash;                </h2>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <p>&ndash;&gt;-->
+<!--&lt;!&ndash;                  <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">&ndash;&gt;-->
+<!--&lt;!&ndash;                    中山大学本科教务系统&ndash;&gt;-->
+<!--&lt;!&ndash;                  </el-link>&ndash;&gt;-->
+<!--&lt;!&ndash;                </p>&ndash;&gt;-->
+<!--&lt;!&ndash;              </el-col>&ndash;&gt;-->
+
+<!--              <el-col :span="6" :offset="3">-->
+<!--                <component is="script" type="text/javascript" id="clstr_globe"-->
+<!--                           src="https://clustrmaps.com/globe.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g"></component>-->
+<!--              </el-col>-->
+<!--            </el-row>-->
+<!--          </el-col>-->
         </el-row>
       </el-footer>
 
