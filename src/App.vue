@@ -44,13 +44,15 @@
                     中山大学电子与通信工程学院
                   </el-link>
                 </p>
+              </el-col>
 
-                <p>
+              <el-col :span="12">
+                <h2>
                   <el-link class="el-link"
                            @click="handleClick('https://gms.sysu.edu.cn/gsapp/sys/yjsrzfwappsysu/dbLogin/index.do')">
                     中山大学研究生教育管理服务平台
                   </el-link>
-                </p>
+                </h2>
 
                 <p>
                   <el-link class="el-link" @click="handleClick('https://jwxt.sysu.edu.cn/jwxt/#/login')">
@@ -58,24 +60,8 @@
                   </el-link>
                 </p>
               </el-col>
-
-              <el-col :span="6" :offset="3">
-                <component is="script" type="text/javascript" id="clstr_globe" src="http://clustrmaps.com/globe.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g"></component>
-              </el-col>
             </el-row>
           </el-col>
-
-          <!--          <el-col :span="8">-->
-          <!--            <h1> </h1>-->
-
-          <!--            <h2>-->
-          <!--              <el-link class="el-link" href="https://www.sysu.edu.cn/" >中山大学</el-link>-->
-          <!--            </h2>-->
-
-          <!--            <p>-->
-          <!--              <el-link class="el-link" href="https://sece.sysu.edu.cn/index.htm" >中山大学电子与通信工程学院</el-link>-->
-          <!--            </p>-->
-          <!--          </el-col>-->
         </el-row>
       </el-footer>
 
