@@ -74,7 +74,7 @@ watch(computedHeight, (newHeight) => {
   color: #ffffff;
   font-size: 40px;
   opacity: 1;
-  line-height: 150%;
+  line-height: 125%;
   font-weight: 900;
   font-family:Georgia, 'Times New Roman', Times, serif;
   display: flow;
