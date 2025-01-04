@@ -144,6 +144,14 @@ export const DatasettableData: Resourceitem[] =  [
         intro: '首个月球环境跨视角定位数据集。',
     },
     {
+        name: 'RAECD',
+        person: '高平海',
+        img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_raecd.png`,
+        url: '',
+        num: '13GB',
+        intro: '利用机械臂采集的DAVIS 346C事件相机数据集，用于评估事件相机视频重建性能。',
+    },
+    {
         name: 'SensatUrban',
         person: '刘砚',
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_sensaturban.png`,
