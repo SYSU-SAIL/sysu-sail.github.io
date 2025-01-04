@@ -534,17 +534,17 @@ export const AlumnitableData : Person[] = [
 
 // 2022届硕士
     {
-        'name': '杜沛峰',
+        'name': '蔡杜荣',
         'title': '2022届 硕士',
-        'img': `/${base}/avatars/g2022_DuPeifeng.jpg`,
+        'img': `/${base}/avatars/g2022_CaiDurong.jpg`,
         'area': '华为',
         'url': '',
         'email': '',
     },
     {
-        'name': '杜荣',
+        'name': '杜沛峰',
         'title': '2022届 硕士',
-        'img': `/${base}/avatars/g2022_DuRong.jpg`,
+        'img': `/${base}/avatars/g2022_DuPeifeng.jpg`,
         'area': '华为',
         'url': '',
         'email': '',
