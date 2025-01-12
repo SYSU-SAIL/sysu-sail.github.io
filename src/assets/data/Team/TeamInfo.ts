@@ -50,7 +50,7 @@ export const FacultytableData : Person[] = [
     {'name': '张晔',
         'title': '博士后',
         'img': `/${base}/avatars/Zhangye.jpg`,
-        'area': '机器人具身智能\n\n获高分图像解译软件大赛冠军',
+        'area': '人机交互具身智能\n\n获高分图像解译软件大赛冠军',
         'url': 'https://github.com/crocodilegogogo',
         'email': 'zhangy2658@mail.sysu.edu.cn ',
     },

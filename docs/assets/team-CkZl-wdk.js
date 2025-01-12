@@ -1,4 +1,4 @@
-import{l as $,r as k,d as Z,q as p,v as w,x as t,C as e,z as i,M as h,B as A,A as W,Y as b,W as f,t as v,K as C,L as D,a0 as q,a1 as G}from"./index-B6vrcPJU.js";import{E as B,a as E}from"./anchor-link-C0HyPX1G.js";import{E as L,_ as j}from"./_plugin-vue_export-helper-1cuB3eX5.js";import"./raf-DUCa9jmY.js";const a=".",X=[{name:"郭裕兰",title:"教授",img:`/${a}/avatars/GuoYulan.jpeg`,area:`三维视觉与机器人
+import{l as $,r as k,d as Z,q as p,v as w,x as t,C as e,z as i,M as h,B as A,A as W,Y as b,W as f,t as v,K as C,L as D,a0 as q,a1 as G}from"./index-BaDi5r9L.js";import{E as B,a as E}from"./anchor-link-CULruDyk.js";import{E as L,_ as j}from"./_plugin-vue_export-helper-BrfQgnee.js";import"./raf-NPBOFGMD.js";const a=".",X=[{name:"郭裕兰",title:"教授",img:`/${a}/avatars/GuoYulan.jpeg`,area:`三维视觉与机器人
 
 团队负责人`,url:"https://www.yulanguo.cn/",email:"guoyulan@sysu.edu.cn"},{name:"张鹏",title:"副教授",img:`/${a}/avatars/ZhangPeng.jpeg`,area:`高分辨率对地观测
 
@@ -8,7 +8,7 @@ import{l as $,r as k,d as Z,q as p,v as w,x as t,C as e,z as i,M as h,B as A,A a
 
 入选深圳市海外高层次人才`,url:"http://zhangruimao.site/#",email:"zhangrm27@mail.sysu.edu.cn"},{name:"黄小红",title:"副教授",img:"",area:`图像处理与识别
 
-获国家科技进步二等奖`,url:"",email:"huangxh75@mail.sysu.edu.cn"},{name:"张晔",title:"博士后",img:`/${a}/avatars/Zhangye.jpg`,area:`机器人具身智能
+获国家科技进步二等奖`,url:"",email:"huangxh75@mail.sysu.edu.cn"},{name:"张晔",title:"博士后",img:`/${a}/avatars/Zhangye.jpg`,area:`人机交互具身智能
 
 获高分图像解译软件大赛冠军`,url:"https://github.com/crocodilegogogo",email:"zhangy2658@mail.sysu.edu.cn "},{name:"王龙光",title:"博士后",img:`/${a}/avatars/WangLongguang.png`,area:`底层视觉与模型轻量化
 
