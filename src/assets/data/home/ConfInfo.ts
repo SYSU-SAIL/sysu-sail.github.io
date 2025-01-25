@@ -21,7 +21,7 @@ export const ConftableData: Conf[] =  [
 	{
         name: 'ICCV',
         level: 'CCF A',
-        date: '2025-03-15',
+        date: '2025-03-07',
         url: 'https://iccv2025.thecvf.com/',
     },
 	{
@@ -51,7 +51,7 @@ export const ConftableData: Conf[] =  [
 	{
         name: 'ICLR',
         level: 'TH-CPL A',
-        date: '2024-10-01',
+        date: 'TBD',
         url: 'https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra',
     },
     {
