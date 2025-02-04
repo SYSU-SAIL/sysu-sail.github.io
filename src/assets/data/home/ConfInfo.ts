@@ -22,7 +22,7 @@ export const ConftableData: Conf[] =  [
         name: 'ICCV',
         level: 'CCF A',
         date: '2025-03-07',
-        url: 'https://iccv2025.thecvf.com/',
+        url: 'https://iccv.thecvf.com/',
     },
 	{
         name: 'ACM MM',
