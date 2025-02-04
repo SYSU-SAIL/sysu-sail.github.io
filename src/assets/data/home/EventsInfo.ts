@@ -6,6 +6,12 @@ export interface Event {
 }
 
 export const EventtableData: Event[] =  [
+    {
+        name: '实验室6篇论文被ICRA 2025录用',
+        date: '2025-01',
+        content: '',
+        url: '',
+    },
 	{
         name: '实验室1人入选第十届中国科协青年人才托举工程',
         date: '2024-12',
