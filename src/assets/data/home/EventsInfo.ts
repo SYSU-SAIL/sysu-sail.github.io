@@ -7,6 +7,12 @@ export interface Event {
 
 export const EventtableData: Event[] =  [
     {
+        name: '实验室6篇论文被CVPR 2025录用',
+        date: '2025-02',
+        content: '',
+        url: '',
+    },
+    {
         name: '实验室6篇论文被ICRA 2025录用',
         date: '2025-01',
         content: '',

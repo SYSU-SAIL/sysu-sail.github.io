@@ -6,12 +6,6 @@ export interface Conf {
 }
 
 export const ConftableData: Conf[] =  [
-    {
-        name: 'ICML',
-        level: 'CCF A',
-        date: '2025-01-31',
-        url: 'https://icml.cc/Conferences/2025',
-    },
 	{
         name: 'IROS',
         level: 'CCF C',
