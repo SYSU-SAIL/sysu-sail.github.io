@@ -61,6 +61,13 @@ export const FacultytableData : Person[] = [
         'url': 'https://longguangwang.github.io/',
         'email': '',
     },
+    {'name': '余自如',
+        'title': '博士后',
+        'img': `/${base}/avatars/yuziru.jpg`,
+        'area': '工业智能光谱检测系统\n\n入选珠江人才计划',
+        'url': '',
+        'email': '',
+    },
 ]
 
 export const StafftableData : Person[] = [
