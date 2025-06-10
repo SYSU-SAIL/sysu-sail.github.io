@@ -1,4 +1,4 @@
-import{l as $,r as z,d as Z,q as p,v as w,x as t,C as e,z as i,M as h,B as A,A as W,Y as b,W as f,t as y,K as C,L as D,a0 as G,a1 as q}from"./index-BUzlSAcY.js";import{E as B,a as E}from"./anchor-link-BbI6xJS0.js";import{E as L,_ as j}from"./_plugin-vue_export-helper-dC5bStTZ.js";import"./raf-CbdMRjHQ.js";const a=".",X=[{name:"郭裕兰",title:"教授",img:`/${a}/avatars/GuoYulan.jpeg`,area:`三维视觉与机器人
+import{l as $,r as z,d as Z,q as p,v as w,x as t,C as e,z as i,M as h,B as A,A as W,Y as b,W as f,t as y,K as C,L as D,a0 as G,a1 as q}from"./index-BJfYvVzk.js";import{E as B,a as E}from"./anchor-link-GaWleC0q.js";import{E as L,_ as j}from"./_plugin-vue_export-helper-CobECD_a.js";import"./raf-Cbk8d58K.js";const a=".",X=[{name:"郭裕兰",title:"教授",img:`/${a}/avatars/GuoYulan.jpeg`,area:`三维视觉与机器人
 
 团队负责人`,url:"https://www.yulanguo.cn/",email:""},{name:"张鹏",title:"副教授",img:`/${a}/avatars/ZhangPeng.jpeg`,area:`高分辨率对地观测
 

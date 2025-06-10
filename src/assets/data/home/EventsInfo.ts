@@ -7,6 +7,12 @@ export interface Event {
 
 export const EventtableData: Event[] =  [
     {
+        name: '2025年中国空间智能大会（ChinaSI）开放注册，本次大会由中山大学承办，郭裕兰教授担任大会主席',
+        date: '2025-06',
+        content: '',
+        url: '',
+    },
+    {
         name: '实验室6篇论文被CVPR 2025录用',
         date: '2025-02',
         content: '',
