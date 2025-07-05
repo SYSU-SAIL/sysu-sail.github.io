@@ -346,7 +346,7 @@ export const AlumnitableData : Person[] = [
     {'name': '刘浩',
         'title': '2023届 博士',
         'img': `/${base}/avatars/g2023_LiuHao.jpg`,
-        'area': '华东师范大学青年研究员',
+        'area': '华东师范大学研究员 博导',
         'url': '',
         'email': '',
     },
