@@ -147,7 +147,7 @@ export const DatasettableData: Resourceitem[] =  [
         name: 'RAECD',
         person: '高平海',
         img: `/${import.meta.env.VITE_BASE_PATH}/resources/dataset_raecd.png`,
-        url: '',
+        url: 'https://huggingface.co/datasets/pinghai/BDE2VID_Datasets',
         num: '13GB',
         intro: '利用机械臂采集的DAVIS 346C事件相机数据集，用于评估事件相机视频重建性能。',
     },
