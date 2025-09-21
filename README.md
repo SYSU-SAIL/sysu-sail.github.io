@@ -1,3 +1,6 @@
+# 代码结构
+主页 src/pages/index.vue
+
 # element-plus-vite-starter
 
 > A starter kit for Element Plus with Vite
@@ -45,3 +48,4 @@ npm run dev
 ### Custom theme
 
 See `src/styles/element/index.scss`.
+
