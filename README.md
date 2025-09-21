@@ -1,5 +1,50 @@
 # 代码结构
-主页 src/pages/index.vue
+## 主页 
+
+src/pages/index.vue
+
+ts文件目录 src/assets/data
+
+### 走马灯     
+
+ts文件 src/assets/data/home/Carouseldata.ts
+
+走马灯建议提前resize好图片，900\*2000
+
+### 会议信息    
+
+ts文件 src/assets/data/home/ConfInfo.ts
+
+## 团队成员
+
+ts文件 src/assets/data/Team/TeamInfo.ts
+
+头像文件 public/avatars
+
+白底，可以自己跑分割，resize成4:3
+
+## 研究方向
+
+### 研究领域 
+
+ts文件 src/assets/data/Research/AreaInfo.ts
+
+### 研究成果 
+
+ts文件 src/assets/data/Research/PublicationsInfo.ts
+        
+图片  public/publications
+
+## 平台资源
+
+ts文件  src/assets/data/Resource/ResourceInfo.ts
+
+图片    public/resources
+
+## 团队动态
+
+ts文件  src/assets/data/home/EventsInfo.ts
+
 
 # element-plus-vite-starter
 
