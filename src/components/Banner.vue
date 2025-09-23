@@ -3,7 +3,7 @@
     <el-carousel  width="100%" height="28dvw" :autoplay="true">
       <el-carousel-item  v-for="(item, index) in Bannerimages" :key="index">
         <div id="img_text" position="relative" style="display: flex; align-items: flex-end;">
-          <img :src="item.url" width="100%" height="auto" style="object-fit: fill;" />
+          <img :src="item.url" width="auto" height="100%" style="object-fit: fill;" />
           <div  class="text_box" style="whiteSpace: pre-line; z-index: 1;">
             <h3> {{ item.text }} </h3>
           </div>
