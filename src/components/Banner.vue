@@ -71,11 +71,11 @@ onUnmounted(() => {
   width: 100%;
   height: 180px;
   position: absolute;
-  bottom: 0;   /* 关键：贴底对齐 */
-  left: 0;     /* 保证从左开始 */
-  display: flex;
-  align-items: center;  /* 让文字在盒子里上下居中 */
-  padding-left: 20px;   /* 给文字留点左右间距 */
+  bottom: 0;       /* 贴底 */
+  left: 0;
+  display: flex;   
+  align-items: center;    /* 竖直居中 */
+  justify-content: center;/* 水平居中 */
   box-sizing: border-box;
 }
 
