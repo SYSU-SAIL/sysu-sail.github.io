@@ -26,7 +26,7 @@
                 :gutter="10">
           <el-col :span="8">
             <h1>联系我们</h1>
-            <h2>郭裕兰教授<br/><br/>guoyulan@sysu.edu.cn</h2>
+            <h2>中山大学空间智能实验室<br/><br/>lava_lab@163.com</h2>
           </el-col>
 
           <el-col :span="8">
