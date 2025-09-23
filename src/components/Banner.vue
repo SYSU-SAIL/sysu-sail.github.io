@@ -2,7 +2,10 @@
   <div class="banner_container_custom" ref="carouselDiv">
     <el-carousel  width="100%" height="28dvw" :autoplay="true">
       <el-carousel-item  v-for="(item, index) in Bannerimages" :key="index">
-        <div id="img_text" style="display: flex; justify-content: center; align-items: center; position: relative; height: 100%;">
+        <div 
+          id="img_text" 
+          style="display: flex; justify-content: center; align-items: center; position: relative; height: 100%; background: #000;"
+        >
           <img :src="item.url" class="carousel-img" />
           <div class="text_box">
             <h3>{{ item.text }}</h3>
@@ -81,9 +84,9 @@ onUnmounted(() => {
 }
 
 .carousel-img {
-  height: 100%;       /* 高度撑满父容器 */
-  width: auto;        /* 宽度按比例自适应 */
-  object-fit: contain;/* 保证完整显示，不裁剪 */
+  height: 100%;       /* 高度撑满容器 */
+  width: auto;        /* 宽度按比例缩放 */
+  object-fit: contain;/* 保持比例，完整显示 */
   display: block;
 }
 </style>
