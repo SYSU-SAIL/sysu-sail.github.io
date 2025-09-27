@@ -19,7 +19,7 @@ export const Bannerimages = computed<CarouselItem[]>(() => [
     { url: `/${base}/carousel/1_resize.jpg`, text: "中山大学深圳校区激光SLAM建图结果" },
     { url: `/${base}/carousel/2_resize.jpg`, text: "左：高灵活度桌面抓取机器人\n右：野外智能抓取机器人" },
     { url: `/${base}/carousel/3_resize.jpg`, text: "大场景高精度建图的移动激光扫描车" },
-    { url: `/${base}/carousel/5.jpg`, text: "7月18日，中国图象图形学学会主办，中山大学承办的首届中国空间智能大会在深圳顺利召开，郭裕兰教授担任大会主席" },
+    { url: `/${base}/carousel/4.jpg`, text: "7月18日，中国图象图形学学会主办，中山大学承办的首届中国空间智能大会在深圳顺利召开，郭裕兰教授担任大会主席" },
     // 可以根据需要添加更多的图片数据
 ]);
 
