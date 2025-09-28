@@ -17,6 +17,19 @@ export interface YearwithPaper {
 
 export const PublicationstableData = computed<YearwithPaper[]>(() => [
     {
+        "id": "pub25",
+        "year": "2025",
+        "papers": [
+            {'title': 'Unsupervised Degradation Representation Learning for Unpaired Restoration of Images and Point Clouds',
+                'book': 'IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)',
+                'author': 'Longguang Wang, Yulan Guo, Yingqian Wang, Xiaoyu Dong, Qingyu Xu, Jungang Yang, Wei An',
+                'url': 'https://ieeexplore.ieee.org/abstract/document/10738507',
+                'code': '',
+                'img': `/${import.meta.env.VITE_BASE_PATH}/publications/2024_UDRL_for_restoration.png`,
+            },
+        ]
+    },
+    {
         "id": "pub24",
         "year": "2024",
         "papers": [
