@@ -8,14 +8,38 @@ export interface Conf {
 export const ConftableData: Conf[] =  [
 
 	{
-        name: 'ICRA',
+        name: 'VLDB',
+        level: 'CCF A',
+        date: '2025-10',
+        url: '',
+    },
+	{
+        name: 'PerCom',
         level: 'CCF B',
-        date: '2025-09',
-        url: 'https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra',
+        date: '2025-10',
+        url: '',
+    },
+	{
+        name: 'WWW',
+        level: 'CCF A',
+        date: '2025-10',
+        url: '',
+    },
+	{
+        name: 'AAMAS',
+        level: 'CCF B',
+        date: '2025-10',
+        url: '',
+    },
+	{
+        name: 'IUI',
+        level: 'CCF B',
+        date: '2025-10',
+        url: '',
     },
 	{
         name: 'ICLR',
-        level: 'TH-CPL A',
+        level: 'CCF A',
         date: '2025-10',
         url: 'https://iclr.cc/',
     },
@@ -30,5 +54,35 @@ export const ConftableData: Conf[] =  [
         level: 'CCF B',
         date: '2025-12',
         url: 'https://cvpr.thecvf.com/',
+    },
+	{
+        name: 'UbiComp/ISWC',
+        level: 'CCF A',
+        date: '2025-11',
+        url: '',
+    },
+	{
+        name: 'RECOMB',
+        level: 'CCF B',
+        date: '2025-11',
+        url: '',
+    },
+	{
+        name: 'ICAPS',
+        level: 'CCF B',
+        date: '2025-12',
+        url: '',
+    },
+	{
+        name: 'ECCV',
+        level: 'CCF B',
+        date: '2026-03',
+        url: '',
+    },
+	{
+        name: 'ECSCW',
+        level: 'CCF B',
+        date: '2026-03',
+        url: '',
     },
 ]
