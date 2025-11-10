@@ -14,7 +14,7 @@ const base = import.meta.env.VITE_BASE_PATH;
 export const FacultytableData : Person[] = [
     {'name': '郭裕兰',
         'title': '教授',
-        'img': `/${base}/avatars/GuoYulan.jpeg`,
+        'img': `/${base}/avatars/guoyulan.png`,
         'area': '三维视觉与机器人\n\n团队负责人',
         'url': 'https://www.yulanguo.cn/',
         'email': '',
@@ -22,7 +22,7 @@ export const FacultytableData : Person[] = [
     {'name': '汪汉云',
         'title': '副教授',
         'img': `/${base}/avatars/wanghanyun.png`,
-        'area': '多模态环境感知\n\nIJAEOG最佳审稿',
+        'area': '多模态环境感知\n\n中山大学逸仙学者',
         'url': 'https://why-scholar.github.io/',
         'email': '',
     },
