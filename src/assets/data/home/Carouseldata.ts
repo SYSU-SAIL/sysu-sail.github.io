@@ -16,6 +16,7 @@ interface CarouselItem {
 
 const base = import.meta.env.VITE_BASE_PATH;
 export const Bannerimages = computed<CarouselItem[]>(() => [
+    { url: `/${base}/carousel/hezhao.jpg`, text: "热烈欢迎汪汉云老师加入SAIL团队" },
     { url: `/${base}/carousel/1_resize.jpg`, text: "中山大学深圳校区激光SLAM建图结果" },
     { url: `/${base}/carousel/2_resize.jpg`, text: "左：高灵活度桌面抓取机器人\n右：野外智能抓取机器人" },
     { url: `/${base}/carousel/3_resize.jpg`, text: "大场景高精度建图的移动激光扫描车" },
