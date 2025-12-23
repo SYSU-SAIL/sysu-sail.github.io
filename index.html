@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/icon_lava.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/src/assets/icon_lava.png" sizes="1320x325" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SYSU SAIL</title>
-    <script type="module" crossorigin src="/assets/index-B9gWcN0C.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CmBMmFef.css">
+      <script>
+          (function () {
+              const redir = sessionStorage.redirect;
+              delete sessionStorage.redirect;
+              if (redir && redir !== location.href) {
+                  history.replaceState(null, null, redir);
+              }
+          })();
+      </script>
   </head>
   <body>
     <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
